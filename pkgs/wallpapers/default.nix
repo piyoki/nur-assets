@@ -5,7 +5,7 @@ let
   version = "unstable-2024-03-09";
   meta = with pkgs.lib; {
     description = "NUR wallpapers for personal usage";
-    homepage = "https://github.com/yqlbu/nur-assets";
+    homepage = "https://github.com/miooochi/nur-assets";
     license = licenses.ofl;
     platforms = platforms.linux;
     mainProgram = pname;
