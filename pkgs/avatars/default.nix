@@ -1,10 +1,10 @@
 { stdenv, pkgs, ... }:
 
 let
-  name = "wallpapers";
-  version = "unstable-2024-03-09";
+  name = "avatars";
+  version = "unstable-2024-10-11";
   meta = with pkgs.lib; {
-    description = "NUR wallpapers for personal usage";
+    description = "NUR avatars for personal usage";
     homepage = "https://github.com/piyoki/nur-assets";
     license = licenses.ofl;
     platforms = platforms.linux;
@@ -14,7 +14,7 @@ let
 in
 stdenv.mkDerivation rec {
   inherit name version meta;
-  src = ../../assets/wallpapers;
+  src = ../../assets/avatars;
   installPhase = ''
     install -Dm444 * -t $out/share/${name}
   '';

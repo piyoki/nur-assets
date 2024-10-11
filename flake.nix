@@ -19,6 +19,7 @@
         packages = {
           # assets
           wallpapers = pkgs.callPackage ./pkgs/wallpapers { };
+          avatars = pkgs.callPackage ./pkgs/avatars { };
         };
       }));
 }
